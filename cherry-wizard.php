@@ -8,7 +8,7 @@
  * Plugin Name:       Cherry Wizard
  * Plugin URI:        http://www.cherryframework.com/
  * Description:       Installation wizard for CherryFramework-based templates
- * Version:           1.0.0 beta1
+ * Version:           1.0.0
  * Author:            Cherry Team
  * Author URI:        http://www.cherryframework.com/
  * Text Domain:       cherry-wizard
