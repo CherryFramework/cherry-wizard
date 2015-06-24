@@ -1,0 +1,412 @@
+// variables
+$extra-text: #2a445d;
+
+.cherry-ui-core {
+
+	// Base and resets
+	&.cherry-wizard_ {
+		max-width: 800px;
+	}
+
+	.hidden_ {
+		display: none !important;
+	}
+	&.updated {
+		background: none;
+		box-shadow: none;
+		padding: 0;
+		margin: 0;
+		border: none;
+	}
+	.box-default_.content-wrap_ {
+		border: 1px solid #d0d0d0;
+		background: #fcfcfc;
+		margin: 0 0 15px 0;
+	}
+
+	.box-default_.warning-box_ {
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			left: -1px;
+			top: -1px;
+			bottom: -1px;
+			width: 5px;
+			background: #ec9813;
+		}
+		&:before {
+			background: none;
+			content: "\f153";
+			-webkit-font-smoothing: antialiased;
+			font-family:'dashicons';
+			font-size: 35px;
+			float: left;
+			color: #ec9813;
+			margin: 10px 10px 0 0;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+	}
+
+	.wizard-form-row_ {
+		padding: 5px 0;
+		&:after {
+			clear: both;
+			content: "";
+			width: 100%;
+			display: block;
+		}
+		&.submit-row_,
+		&.info-row_ {
+			width: 300px;
+			max-width: 100%;
+			margin: 0 0 0 110px;
+			position: relative;
+		}
+		&.info-row_ {
+			text-align: center;
+		}
+	}
+	.wizard-form-col-label_ {
+		float: left;
+		width: 105px;
+		padding: 10px 5px 10px 0;
+		font-size: 13px;
+		line-height: 20px;
+		label {
+			color: #333;
+			font-weight: 600;
+			font-size: 13px;
+		}
+	}
+	.wizard-form-col-control_ {
+		float: left;
+		width: 300px;
+		max-width: 100%;
+		position: relative;
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="url"] {
+			width: 300px;
+			margin: 0;
+			&.error {
+				border-color: #f62e46;
+			}
+		}
+	}
+	.button-primary_,
+	.button-default_ {
+		&.fullwidth_ {
+			width: 100%;
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing:border-box;
+			text-align: center;
+			font-size: 20px;
+		}
+	}
+
+	.submit-wrap_ {
+		padding: 10px 0 0 0;
+	}
+
+	.box-inner_ {
+		margin: 15px -15px -15px;
+		padding: 15px;
+		background: #f2f3f4;
+		border-top: 1px solid #d4d5d6;
+	}
+
+	.wizard-popup-message {
+		position: absolute;
+		left: 100%;
+		top: 0;
+		border:none !important;
+		margin: 0 0 0 10px !important;
+		background: #f62e46;
+		padding: 5px 10px;
+		color: #fff;
+		min-width: 200px;
+	}
+	.wizard-message.error {
+		margin: 15px 0 0 !important;
+		border:none;
+		background: #f62e46;
+		padding: 10px;
+		color: #fff;
+	}
+
+	// progress bar
+	.progress-bar_ {
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		position: relative;
+		height: 10px;
+		overflow: hidden;
+		&:after {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 10px;
+			width: 100%;
+			border: 1px solid #dddcdc;
+			border-radius: 5px;
+			background: #f7f7f7;
+			z-index: 1;
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing:border-box;
+			content: "";
+		}
+
+		.wizard-install-progress-group {
+			float: left;
+			font-size: 0;
+			line-height: 0;
+			&:first-child {
+				.wizard-install-progress-step {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.wizard-install-progress-step {
+			background: $extra-text;
+			border-radius: 5px;
+			height: 10px;
+			position: relative;
+			z-index: 2;
+			width: 0;
+			display: inline-block;
+			vertical-align: top;
+			&:before {
+				content: "";
+				width: 10px;
+				height: 10px;
+				left: -5px;
+				top: 0;
+				position: absolute;
+				background: $extra-text;
+			}
+			&.empty {
+				&:before {
+					width: 0;
+				}
+			}
+		}
+	}
+	.progress-bar-load_ {
+		background: $extra-text;
+		height: 10px;
+		width: 0;
+		border-radius: 5px;
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+	.progress-bar-counter_ {
+		color: $extra-text;
+		font-weight: bold;
+		padding: 5px 0;
+	}
+
+	// Installation notice
+	.wizard-admin-notice_ {
+		background: url('../images/cherry-bg.png') no-repeat right center #fff;
+		padding: 20px 20px 20px 30px;
+		position: relative;
+		margin: 10px 0;
+		box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+	}
+	.wizard-admin-notice_:after {
+		width: 100%;
+		clear: both;
+		display: block;
+		content: "";
+	}
+	.wizard-admin-notice-content_ {
+		overflow: hidden;
+		padding: 5px 0 0 0;
+	}
+	.wizar-notice-actions_ {
+		padding: 10px 0 0 0;
+	}
+	.dismiss-notice_ {
+		margin: 0 0 0 10px;
+	}
+	.wizard-admin-notice_:before {
+		content: "";
+		float: left;
+		width: 75px;
+		height: 75px;
+		background: url('../images/cherry-logo-75.png') no-repeat 0 0;
+		margin: 0 20px 0 0;
+	}
+
+	// Themes and plugins install page
+	.wizard-installation.denied,
+	.wizard-installation.manually-allow {
+		display: none;
+	}
+	.wizard-installation_item_title {
+		background: #fff;
+		border-radius: 6px;
+		border:1px solid #dddcdc;
+		background: #fcfcfc;
+		padding: 14px 20px 14px 10px;;
+		font-size: 13px;
+		line-height: 20px;
+		margin: 5px 0;
+		font-weight: bold;
+		color: #444;
+		&:before {
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 10px 0 0;
+			content: '';
+			background: url('../images/loader.gif') no-repeat center top;
+		}
+		&:after {
+			clear: both;
+			width: 100%;
+			display: block;
+			content: '';
+		}
+	}
+
+	.item-error .wizard-installation_item_title:before {
+		background: none;
+		content: "\f153";
+		-webkit-font-smoothing: antialiased;
+		font-family:'dashicons';
+		font-size: 24px;
+		color: #f62e46;
+	}
+	.item-success .wizard-installation_item_title:before,
+	.item-warning .wizard-installation_item_title:before {
+		background: none;
+		content: "\f147";
+		-webkit-font-smoothing: antialiased;
+		font-family:'dashicons';
+		font-size: 24px;
+		color: $extra-text;
+	}
+	.item-warning .wizard-installation_item_title:before {
+		color: #ec9813;
+	}
+
+	.wizard-installation_item_details {
+		display: inline-block;
+		margin: 0 0 0 15px;
+		vertical-align: top;
+		float: right;
+		text-decoration: none;
+		color: $extra-text;
+		box-shadow: none !important;
+		&:hover {
+			color: lighten( $extra-text, 15% );
+		}
+		&:after {
+			content: "\f140";
+			display: inline-block;
+			-webkit-font-smoothing: antialiased;
+			font-family: 'dashicons';
+			font-size: 22px;
+			line-height: 20px;
+			margin: 0 0 0 2px;
+			vertical-align: top;
+		}
+		&.active {
+			&:after {
+				content: "\f142";
+			}
+		}
+	}
+
+	.wizard-installation_item_details .dashicons {
+		font-size: 16px;
+		height: 18px;
+		vertical-align: bottom;
+		text-decoration: none;
+		display: inline-block;
+		margin: 0;
+	}
+	.wizard-installation_item_responce {
+		display: none;
+		padding: 5px 40px;
+		p {
+			margin: 0 0 5px 0;;
+		}
+	}
+	.wizard-installation_item_responce.active {
+		display: block;
+	}
+	.wizard-retry {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+	}
+	.wizard-installation {
+		position: relative;
+	}
+	.wizard-installation.break {
+		padding-bottom: 40px;
+	}
+
+	// Congratulations page
+	.content-box.install-finished_ {
+		margin: 30px 0;
+		text-align: center;
+		background: url('../images/finish-page-bg.png') no-repeat center center #fff;
+		padding:100px 40px 135px;
+		h3 {
+			font-size: 125px;
+			line-height: 130px;
+			color: $extra-text;
+			font-weight: 300;
+			letter-spacing: -4px;
+			margin: 0 0 30px 0;
+			&:before {
+				display: block;
+				width: 150px;
+				height: 150px;
+				content: "";
+				background: url('../images/cherry-logo-150.png') no-repeat center center;
+				margin: 0 auto 20px;
+			}
+		}
+		.install-finished-text_ {
+			color: #a6a7a7;
+			font-size: 28px;
+			line-height: 32px;
+			font-weight: 300;
+			padding:0 0 20px 0;
+		}
+	}
+	.install-finished-actions_ {
+		a {
+			margin: 0 5px;
+		}
+	}
+	.button-primary_ + .spinner {
+		float: none;
+		margin: 0 0 0 10px;
+		vertical-align: middle;
+		&.spinner-abs-left {
+			position: absolute;
+			top: 17px;
+			left: -40px;
+		}
+	}
+}

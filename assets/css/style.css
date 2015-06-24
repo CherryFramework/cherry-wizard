@@ -1,0 +1,316 @@
+.cherry-ui-core.cherry-wizard_ {
+  max-width: 800px; }
+.cherry-ui-core .hidden_ {
+  display: none !important; }
+.cherry-ui-core.updated {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  border: none; }
+.cherry-ui-core .box-default_.content-wrap_ {
+  border: 1px solid #d0d0d0;
+  background: #fcfcfc;
+  margin: 0 0 15px 0; }
+.cherry-ui-core .box-default_.warning-box_ {
+  position: relative; }
+  .cherry-ui-core .box-default_.warning-box_:after {
+    position: absolute;
+    content: "";
+    left: -1px;
+    top: -1px;
+    bottom: -1px;
+    width: 5px;
+    background: #ec9813; }
+  .cherry-ui-core .box-default_.warning-box_:before {
+    background: none;
+    content: "\f153";
+    -webkit-font-smoothing: antialiased;
+    font-family: 'dashicons';
+    font-size: 35px;
+    float: left;
+    color: #ec9813;
+    margin: 10px 10px 0 0; }
+  .cherry-ui-core .box-default_.warning-box_ p {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+.cherry-ui-core .wizard-form-row_ {
+  padding: 5px 0; }
+  .cherry-ui-core .wizard-form-row_:after {
+    clear: both;
+    content: "";
+    width: 100%;
+    display: block; }
+  .cherry-ui-core .wizard-form-row_.submit-row_, .cherry-ui-core .wizard-form-row_.info-row_ {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 0 0 110px;
+    position: relative; }
+  .cherry-ui-core .wizard-form-row_.info-row_ {
+    text-align: center; }
+.cherry-ui-core .wizard-form-col-label_ {
+  float: left;
+  width: 105px;
+  padding: 10px 5px 10px 0;
+  font-size: 13px;
+  line-height: 20px; }
+  .cherry-ui-core .wizard-form-col-label_ label {
+    color: #333;
+    font-weight: 600;
+    font-size: 13px; }
+.cherry-ui-core .wizard-form-col-control_ {
+  float: left;
+  width: 300px;
+  max-width: 100%;
+  position: relative; }
+  .cherry-ui-core .wizard-form-col-control_ input[type="text"],
+  .cherry-ui-core .wizard-form-col-control_ input[type="email"],
+  .cherry-ui-core .wizard-form-col-control_ input[type="password"],
+  .cherry-ui-core .wizard-form-col-control_ input[type="url"] {
+    width: 300px;
+    margin: 0; }
+    .cherry-ui-core .wizard-form-col-control_ input[type="text"].error,
+    .cherry-ui-core .wizard-form-col-control_ input[type="email"].error,
+    .cherry-ui-core .wizard-form-col-control_ input[type="password"].error,
+    .cherry-ui-core .wizard-form-col-control_ input[type="url"].error {
+      border-color: #f62e46; }
+.cherry-ui-core .button-primary_.fullwidth_,
+.cherry-ui-core .button-default_.fullwidth_ {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px; }
+.cherry-ui-core .submit-wrap_ {
+  padding: 10px 0 0 0; }
+.cherry-ui-core .box-inner_ {
+  margin: 15px -15px -15px;
+  padding: 15px;
+  background: #f2f3f4;
+  border-top: 1px solid #d4d5d6; }
+.cherry-ui-core .wizard-popup-message {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border: none !important;
+  margin: 0 0 0 10px !important;
+  background: #f62e46;
+  padding: 5px 10px;
+  color: #fff;
+  min-width: 200px; }
+.cherry-ui-core .wizard-message.error {
+  margin: 15px 0 0 !important;
+  border: none;
+  background: #f62e46;
+  padding: 10px;
+  color: #fff; }
+.cherry-ui-core .progress-bar_ {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  height: 10px;
+  overflow: hidden; }
+  .cherry-ui-core .progress-bar_:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 10px;
+    width: 100%;
+    border: 1px solid #dddcdc;
+    border-radius: 5px;
+    background: #f7f7f7;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    content: ""; }
+  .cherry-ui-core .progress-bar_ .wizard-install-progress-group {
+    float: left;
+    font-size: 0;
+    line-height: 0; }
+    .cherry-ui-core .progress-bar_ .wizard-install-progress-group:first-child .wizard-install-progress-step:before {
+      display: none; }
+  .cherry-ui-core .progress-bar_ .wizard-install-progress-step {
+    background: #2a445d;
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+    z-index: 2;
+    width: 0;
+    display: inline-block;
+    vertical-align: top; }
+    .cherry-ui-core .progress-bar_ .wizard-install-progress-step:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      left: -5px;
+      top: 0;
+      position: absolute;
+      background: #2a445d; }
+    .cherry-ui-core .progress-bar_ .wizard-install-progress-step.empty:before {
+      width: 0; }
+.cherry-ui-core .progress-bar-load_ {
+  background: #2a445d;
+  height: 10px;
+  width: 0;
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  z-index: 2; }
+.cherry-ui-core .progress-bar-counter_ {
+  color: #2a445d;
+  font-weight: bold;
+  padding: 5px 0; }
+.cherry-ui-core .wizard-admin-notice_ {
+  background: url("../images/cherry-bg.png") no-repeat right center #fff;
+  padding: 20px 20px 20px 30px;
+  position: relative;
+  margin: 10px 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); }
+.cherry-ui-core .wizard-admin-notice_:after {
+  width: 100%;
+  clear: both;
+  display: block;
+  content: ""; }
+.cherry-ui-core .wizard-admin-notice-content_ {
+  overflow: hidden;
+  padding: 5px 0 0 0; }
+.cherry-ui-core .wizar-notice-actions_ {
+  padding: 10px 0 0 0; }
+.cherry-ui-core .dismiss-notice_ {
+  margin: 0 0 0 10px; }
+.cherry-ui-core .wizard-admin-notice_:before {
+  content: "";
+  float: left;
+  width: 75px;
+  height: 75px;
+  background: url("../images/cherry-logo-75.png") no-repeat 0 0;
+  margin: 0 20px 0 0; }
+.cherry-ui-core .wizard-installation.denied,
+.cherry-ui-core .wizard-installation.manually-allow {
+  display: none; }
+.cherry-ui-core .wizard-installation_item_title {
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #dddcdc;
+  background: #fcfcfc;
+  padding: 14px 20px 14px 10px;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #444; }
+  .cherry-ui-core .wizard-installation_item_title:before {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    content: '';
+    background: url("../images/loader.gif") no-repeat center top; }
+  .cherry-ui-core .wizard-installation_item_title:after {
+    clear: both;
+    width: 100%;
+    display: block;
+    content: ''; }
+.cherry-ui-core .item-error .wizard-installation_item_title:before {
+  background: none;
+  content: "\f153";
+  -webkit-font-smoothing: antialiased;
+  font-family: 'dashicons';
+  font-size: 24px;
+  color: #f62e46; }
+.cherry-ui-core .item-success .wizard-installation_item_title:before,
+.cherry-ui-core .item-warning .wizard-installation_item_title:before {
+  background: none;
+  content: "\f147";
+  -webkit-font-smoothing: antialiased;
+  font-family: 'dashicons';
+  font-size: 24px;
+  color: #2a445d; }
+.cherry-ui-core .item-warning .wizard-installation_item_title:before {
+  color: #ec9813; }
+.cherry-ui-core .wizard-installation_item_details {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  vertical-align: top;
+  float: right;
+  text-decoration: none;
+  color: #2a445d;
+  box-shadow: none !important; }
+  .cherry-ui-core .wizard-installation_item_details:hover {
+    color: #426b92; }
+  .cherry-ui-core .wizard-installation_item_details:after {
+    content: "\f140";
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'dashicons';
+    font-size: 22px;
+    line-height: 20px;
+    margin: 0 0 0 2px;
+    vertical-align: top; }
+  .cherry-ui-core .wizard-installation_item_details.active:after {
+    content: "\f142"; }
+.cherry-ui-core .wizard-installation_item_details .dashicons {
+  font-size: 16px;
+  height: 18px;
+  vertical-align: bottom;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0; }
+.cherry-ui-core .wizard-installation_item_responce {
+  display: none;
+  padding: 5px 40px; }
+  .cherry-ui-core .wizard-installation_item_responce p {
+    margin: 0 0 5px 0; }
+.cherry-ui-core .wizard-installation_item_responce.active {
+  display: block; }
+.cherry-ui-core .wizard-retry {
+  position: absolute;
+  bottom: 20px;
+  left: 20px; }
+.cherry-ui-core .wizard-installation {
+  position: relative; }
+.cherry-ui-core .wizard-installation.break {
+  padding-bottom: 40px; }
+.cherry-ui-core .content-box.install-finished_ {
+  margin: 30px 0;
+  text-align: center;
+  background: url("../images/finish-page-bg.png") no-repeat center center #fff;
+  padding: 100px 40px 135px; }
+  .cherry-ui-core .content-box.install-finished_ h3 {
+    font-size: 125px;
+    line-height: 130px;
+    color: #2a445d;
+    font-weight: 300;
+    letter-spacing: -4px;
+    margin: 0 0 30px 0; }
+    .cherry-ui-core .content-box.install-finished_ h3:before {
+      display: block;
+      width: 150px;
+      height: 150px;
+      content: "";
+      background: url("../images/cherry-logo-150.png") no-repeat center center;
+      margin: 0 auto 20px; }
+  .cherry-ui-core .content-box.install-finished_ .install-finished-text_ {
+    color: #a6a7a7;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    padding: 0 0 20px 0; }
+.cherry-ui-core .install-finished-actions_ a {
+  margin: 0 5px; }
+.cherry-ui-core .button-primary_ + .spinner {
+  float: none;
+  margin: 0 0 0 10px;
+  vertical-align: middle; }
+  .cherry-ui-core .button-primary_ + .spinner.spinner-abs-left {
+    position: absolute;
+    top: 17px;
+    left: -40px; }
+
+/*# sourceMappingURL=style.css.map */
