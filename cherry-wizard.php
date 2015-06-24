@@ -122,7 +122,7 @@ if ( !class_exists('cherry_wizard') ) {
 		 */
 		function is_compatible_wp_version() {
 			global $wp_version;
-			return version_compare( $wp_version, '4.2.3' ) >= 0;
+			return version_compare( $wp_version, '4.2.2' ) >= 0;
 		}
 
 		/**
