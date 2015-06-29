@@ -68,7 +68,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 		 * @since 1.0.0
 		 * @var   string
 		 */
-		public $git_api = 'https://api.github.com/repos/CherryFramework/';
+		public $api_url = 'https://cloud.cherryframework.com/cherry-update/';
 
 		/**
 		 * include necessary files. Run actions
@@ -240,16 +240,35 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 
 		/**
 		 * Get zip url from Git API to seleted product
+		 *
+		 * @since  1.0.0
 		 * @param  string $product needed product slug
+		 * @return theme URL
 		 */
 		public function get_git_zip( $product, $use_dev = true ) {
 
+			// prepare params
 			$product = urlencode( $product );
+			$repo    = 'CherryFramework/' . $product;
 
-			$request_url = esc_url( $this->git_api . $product . '/releases' );
+			$args = array(
+				'user-agent'        => 'WordPress',
+				'github_repository' => home_url( '/' )
+			);
+
+			$query_arg = array(
+				'github_repository' => $repo,
+				'up_query_limit'    => 1
+			);
+
+			if ( $use_dev ) {
+				$query_arg['get_alpha'] = 1;
+			}
+
+			$request_url = add_query_arg( $query_arg, trailingslashit( $this->api_url ) );
 
 			// get latest release zip URL from GitHub API
-			$git_request = wp_remote_get( $request_url );
+			$git_request = wp_remote_get( $request_url, $args );
 
 			if ( is_wp_error( $git_request ) ) {
 				return false;
@@ -265,27 +284,11 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 
 			$respose_body = json_decode( $git_request['body'] );
 
-			if ( empty( $respose_body ) ) {
+			if ( empty( $respose_body ) || ! isset( $respose_body->package ) ) {
 				return false;
 			}
 
-			foreach ( $respose_body as $release ) {
-
-				$ver    = $release->tag_name;
-				$is_dev = ( false !== strpos( $ver, 'alpha' ) || false !== strpos( $ver, 'beta' ) );
-
-				if ( false == $use_dev && true == $is_dev ) {
-					continue;
-				}
-
-				if ( empty( $release->zipball_url ) ) {
-					continue;
-				}
-
-				$zip_url = $release->zipball_url;
-				return $zip_url;
-
-			}
+			return esc_url( $respose_body->package );
 
 		}
 

@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 
 			if ( response.type == 'success' || response.type == 'warning'  ) {
 				_item.addClass('item-' + response.type);
-				_item.find('.wizard-installation_item_response').html(response.content);
+				_item.find('.wizard-installation_item_responce').html(response.content);
 				_item.parent().append(response.next_step);
 				if ( _is_last_step == 'no' ) {
 					cherry_wizard_ajax_request();
