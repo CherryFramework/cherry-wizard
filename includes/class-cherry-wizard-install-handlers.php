@@ -89,7 +89,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 					'install-framework',
 					'install-theme',
 					'activate-theme',
-					'install-plugins-manager',
+					'install-live-chat',
 					'install-data-manager',
 					'install-plugins'
 					)
@@ -112,7 +112,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 			$this->install_groups = apply_filters( 'cherry_wizard_installation_groups', array(
 				'framework'        => array( 'install-framework' ),
 				'theme'            => array( 'install-theme', 'activate-theme' ),
-				'service_plugins'  => array( /*'install-plugins-manager',*/ 'install-data-manager' ),
+				'service_plugins'  => array( 'install-live-chat', 'install-data-manager' ),
 				'frontend_plugins' => array( 'install-plugins' )
 			) );
 
@@ -325,8 +325,8 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 					$this->activate_theme();
 					break;
 
-				case 'install-plugins-manager':
-					$this->install_plugins_manager();
+				case 'install-live-chat':
+					$this->install_live_chat();
 					break;
 
 				case 'install-data-manager':
@@ -484,7 +484,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 			if ( $current_theme->stylesheet == $theme_name ) {
 				$result['type']      = 'warning';
 				$result['content']   = '<p>' . __( 'This theme already active', $cherry_wizard->slug ) . '</p>';
-				$result['next_step'] = $this->step( 'install-data-manager', 'no', __( 'Installing Data manager', $cherry_wizard->slug ) );
+				$result['next_step'] = $this->step( 'install-live-chat', 'no', __( 'Installing Live Chat', $cherry_wizard->slug ) );
 
 				$this->send_install_response( $result );
 			}
@@ -493,7 +493,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 
 			$result['type']      = 'success';
 			$result['content']   = '<p>' . __( 'Theme successfully activated', $cherry_wizard->slug ) . '</p>';
-			$result['next_step'] = $this->step( 'install-data-manager', 'no', __( 'Installing Data Manager', $cherry_wizard->slug ) );
+			$result['next_step'] = $this->step( 'install-live-chat', 'no', __( 'Installing Live Chat', $cherry_wizard->slug ) );
 
 			/**
 			 * Hook fires after child theme activation
@@ -507,21 +507,17 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 		}
 
 		/**
-		 * Install plugins manager
-		 * Temporary this step removed from installation, but maybe sometimes...
+		 * Install live chat
 		 *
 		 * @since 1.0.0
 		 */
-		public function install_plugins_manager() {
+		public function install_live_chat() {
 
 			global $cherry_wizard;
 
-			$plugin = 'cherry-plugins-manager';
-			$url    = $this->get_git_zip( $plugin );
+			$plugin = 'cherry-live-chat';
 
-			if ( false == $url ) {
-				$url = $cherry_wizard->cherry_cloud_url . 'downloads/free-plugins/cherry-plugins-manager.zip';
-			}
+			$url = $cherry_wizard->cherry_cloud_url . 'downloads/free-plugins/cherry-live-chat.zip';
 
 			if ( false == $url ) {
 				$result['type']      = 'error';
@@ -548,7 +544,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 				$plugin_activate = $upgrader->plugin_info();
 
 				if ( !$plugin_activate ) {
-					$plugin_activate = 'cherry-plugins-manager/cherry-plugins-manager.php';
+					$plugin_activate = 'cherry-live-chat/cherry-live-chat.php';
 				}
 
 				$activate = activate_plugin( $plugin_activate ); // Activate the plugin

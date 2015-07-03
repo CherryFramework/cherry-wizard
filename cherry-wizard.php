@@ -281,6 +281,34 @@ if ( !class_exists('cherry_wizard') ) {
 		}
 
 		/**
+		 * Clear imorter sessions after import complete
+		 *
+		 * @since  1.0.0
+		 */
+		public function clear_import_data() {
+			$session_vars = array(
+				'processed_terms',
+				'processed_menus',
+				'url_remap',
+				'featured_images',
+				'attachment_posts',
+				'processed_posts',
+				'menu_items',
+				'post_orphans',
+				'meta_to_rewrite',
+				'missing_menu_items',
+				'posts'
+			);
+
+			foreach ( $session_vars as $var ) {
+				if ( isset( $_SESSION[$var] ) ) {
+					unset( $_SESSION[$var] );
+				}
+			}
+
+		}
+
+		/**
 		 * Check if content importer plugin are avaliable
 		 *
 		 * @since 1.0.0

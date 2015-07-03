@@ -132,6 +132,7 @@ class Cherry_Wizard_Theme_Upgrader extends Theme_Upgrader {
 		if ( is_wp_error($result) ) {
 			if ( array_key_exists('folder_exists', $result->errors) ) {
 				$this->result_type = 'warning';
+				$this->set_theme_name_on_error( $result );
 			} else {
 				$this->result_type = 'error';
 			}
@@ -153,6 +154,17 @@ class Cherry_Wizard_Theme_Upgrader extends Theme_Upgrader {
 		}
 
 		return $result;
+	}
+
+	/**
+	 * Set correct theme name for activation, if theme already installed
+	 */
+	public function set_theme_name_on_error( $error ) {
+		$string = $error->error_data['folder_exists'];
+		preg_match('/themes\/(.[^\/]*)\/$/', $string, $matches);
+		if ( is_array( $matches ) && isset( $matches[1] ) ) {
+			$_SESSION['cherry_data']['theme_name'] = $matches[1];
+		}
 	}
 
 	/**
