@@ -822,6 +822,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 						)
 					);
 					$source = htmlspecialchars_decode( $source );
+					$source = str_replace( '&#038;', '&', $source );
 					break;
 
 				case 'cherry-free':
