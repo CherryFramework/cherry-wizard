@@ -1,0 +1,651 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-wizard\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-11 16:12+0200\n"
+"PO-Revision-Date: 2015-11-11 16:12+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: cherry-wizard.php:149
+msgid "Theme installation complete. Redirecting to the next step..."
+msgstr ""
+
+#: cherry-wizard.php:329
+msgid "Please select installation type"
+msgstr ""
+
+#: cherry-wizard.php:329 cherry-wizard.php:334 cherry-wizard.php:339
+#: cherry-wizard.php:344 includes/views/cherry-wizard-step-1.php:89
+msgid "Retry"
+msgstr ""
+
+#: cherry-wizard.php:334
+msgid "Please provide your email before installation"
+msgstr ""
+
+#: cherry-wizard.php:339 cherry-wizard.php:344
+msgid "Activate your license before installation"
+msgstr ""
+
+#: includes/cherry-wizard-service-hooks.php:164
+msgid "complete"
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:73
+msgid "Please, fill required fields"
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:85
+msgid "can`t send activation request. "
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:92
+msgid "Activation request error. "
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:102
+msgid "Bad request."
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:112
+msgid "Wrong license key. Make sure activation key is correct."
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:122
+msgid "Invalid theme name. Make sure theme name is correct."
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:142
+msgid "Something is wrong. Please contact support team for help."
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:152
+msgid "Theme is not available yet. Please try again in 10 minutes."
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:162
+msgid "Theme is not available. Please contact support team for help."
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:181
+msgid "Everything is ready. Starting theme installation..."
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:208
+msgid "Unknown error. Please try again or contact support for help."
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:212
+msgid "Please enter your email address"
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:217
+msgid "Please enter valid email address"
+msgstr ""
+
+#: includes/class-cherry-wizard-helper.php:231
+msgid "Thank you. Starting installation..."
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:372
+msgid "Can't download CherryFramework"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:388
+msgid "Installing child theme"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:416
+msgid "Theme license not activated"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:422
+msgid "Can't find theme link"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:444
+msgid "Activating child theme"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:476
+msgid "Theme name was not provided. Please activate your theme agian"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:486
+msgid "This theme already active"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:487
+#: includes/class-cherry-wizard-install-handlers.php:496
+msgid "Installing Live Chat"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:495
+msgid "Theme successfully activated"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:524
+msgid "Can`t download Plugin Manager"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:558
+#: includes/class-cherry-wizard-install-handlers.php:634
+#: includes/class-cherry-wizard-install-handlers.php:899
+msgid "Plugin activated"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:565
+msgid "Installing Data Manager"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:600
+msgid "Can`t download Data Manager"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:651
+msgid "Installing required plugins"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:653
+msgid "Preparing required plugins"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:697
+msgid "All done"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:727
+#: includes/class-cherry-wizard-install-handlers.php:763
+#, php-format
+msgid "Installing %s"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:730
+msgid "Plugins prepared"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:796
+msgid "Plugin not exist"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:837
+msgid "Can`t download "
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:949
+msgid "Next step"
+msgstr ""
+
+#: includes/class-cherry-wizard-install-handlers.php:953
+msgid "Details"
+msgstr ""
+
+#: includes/class-cherry-wizard-interface.php:37
+#: includes/class-cherry-wizard-interface.php:38
+msgid "Cherry Wizard"
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:119
+msgid "Wizard will help you to install your Cherry Framework theme."
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:120
+msgid "Install theme"
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:120
+msgid "Dismiss"
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:152
+msgid "Plugins directory not writable"
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:160
+msgid "Themes directory not writable"
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:168
+msgid "Uploads directory not writable"
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:304
+msgid "I understand, start installation"
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:311
+msgid "Change required settings and try again"
+msgstr ""
+
+#: includes/class-cherry-wizard-notices.php:312
+msgid "Try again"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-1.php:29
+msgid "Premium"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-1.php:33
+msgid "Demo"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-1.php:37
+msgid "Undefined"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-1.php:44
+#, php-format
+msgid "<b>%s</b> theme installation"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-1.php:93
+msgid "Installing Cherry framework"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-3.php:32
+msgid "Congratulations"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-3.php:34
+msgid "Theme and content has been successfully installed"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-3.php:37
+msgid "View your site"
+msgstr ""
+
+#: includes/views/cherry-wizard-step-3.php:38
+msgid "Go to Cherry Options"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:26
+msgid ""
+"Please make sure your WordPress is upgraded to version <b>4.2.2</b> or "
+"later. This version contains vital security and stability updates required "
+"for the correct work of Cherry Framework."
+msgstr ""
+
+#: includes/views/cherry-wizard.php:37
+msgid "Theme ID"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:40
+msgid "Enter your theme ID"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:45
+msgid "Activation Key"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:48
+msgid "Enter theme activation key"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:53 includes/views/cherry-wizard.php:74
+msgid "Start"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:66
+msgid "Email"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:69
+msgid "Enter your email address"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:87
+msgid "Get theme key"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:88
+msgid "Order ID"
+msgstr ""
+
+#: includes/views/cherry-wizard.php:89
+msgid "Request"
+msgstr ""
+
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Date"
+#~ msgstr "Fecha"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Miniatura"
+
+#~ msgid "Testimonial Options"
+#~ msgstr "Opciones Testimonial"
+
+#~ msgid "Name:"
+#~ msgstr "Nombre:"
+
+#~ msgid "Enter author's name."
+#~ msgstr "Introduzca el nombre del autor."
+
+#~ msgid "E-mail:"
+#~ msgstr "E-mail:"
+
+#~ msgid "Enter an e-mail address."
+#~ msgstr "Introduzca su dirección de correo electrónico."
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#~ msgid "Enter the URL."
+#~ msgstr "Introduzca URL."
+
+#~ msgid "Title:"
+#~ msgstr "Título:"
+
+#~ msgid "Limit:"
+#~ msgstr "Límite:"
+
+#~ msgid "Image Size (in pixels):"
+#~ msgstr "Tamaño de la imagen (en píxeles):"
+
+#~ msgid "Display Author"
+#~ msgstr "Mostrar al Autor"
+
+#~ msgid "Display Avatar"
+#~ msgstr "Mostrar Avatar"
+
+#~ msgid "Specific ID:"
+#~ msgstr "Específica ID:"
+
+#~ msgid "Testimonials Post IDs, separated by commas."
+#~ msgstr "IDs del Artículo Testimonios, separado por comas."
+
+#~ msgid "Order By:"
+#~ msgstr "Ordenar Por:"
+
+#~ msgid "Order Direction:"
+#~ msgstr "Dirección del Orden:"
+
+#~ msgid "Post content:"
+#~ msgstr "Contenido del artículo:"
+
+#~ msgid "Content Length:"
+#~ msgstr "Longitud del contenido:"
+
+#~ msgid "Template:"
+#~ msgstr "Plantilla:"
+
+#~ msgid "Custom CSS Class:"
+#~ msgstr "Clase CSS Personalizada:"
+
+#~ msgid "Testimonials posts"
+#~ msgstr "Testimonios de los artículos"
+
+#~ msgid ""
+#~ "You can choose if you want to display sidebars and how you want to "
+#~ "display them."
+#~ msgstr ""
+#~ "Usted puede elegir si desea mostrar las barras laterales y la forma en "
+#~ "que desea mostrarlos."
+
+#~ msgid "Left sidebar"
+#~ msgstr "Barra lateral izquierda  "
+
+#~ msgid "Right sidebar"
+#~ msgstr "Barra lateral derecha "
+
+#~ msgid "Left and right sidebar"
+#~ msgstr "Barra lateral izquierda y derecha"
+
+#~ msgid "Two sidebars on the left"
+#~ msgstr "Dos barras laterales a la izquierda"
+
+#~ msgid "Two sidebars on the right"
+#~ msgstr "Dos barras laterales  a la derecha"
+
+#~ msgid "No sidebar"
+#~ msgstr "Sin barra lateral"
+
+#~ msgid "Testimonials"
+#~ msgstr "Testimonios "
+
+#~ msgid "Testimonial"
+#~ msgstr "Testimonio"
+
+#~ msgid "Add New"
+#~ msgstr "Añadir nuevo"
+
+#~ msgid "Add New Testimonial"
+#~ msgstr "Añadir nuevo Testimonio"
+
+#~ msgid "Edit Testimonial"
+#~ msgstr "Editar Testimonio"
+
+#~ msgid "New Testimonial"
+#~ msgstr "Nuevo Testimonio"
+
+#~ msgid "View Testimonial"
+#~ msgstr "Ver Testimonio"
+
+#~ msgid "Search Testimonials"
+#~ msgstr "Buscar Testimonio"
+
+#~ msgid "No testimonials found"
+#~ msgstr "No hay testimonios encontrados"
+
+#~ msgid "No testimonials found in trash"
+#~ msgstr "No hay testimonios encontrados en la papelera"
+
+#~ msgid "Testimonials Categories"
+#~ msgstr " Categorías de  Testimonios"
+
+#~ msgid "Edit Category"
+#~ msgstr "Editar Categoría"
+
+#~ msgid "Search Categories"
+#~ msgstr "Encontrar Categoría"
+
+#~ msgid "Popular Categories"
+#~ msgstr "Categoría Popular"
+
+#~ msgid "All Categories"
+#~ msgstr "Todas las Categorías"
+
+#~ msgid "Update Category"
+#~ msgstr "Actualizar la Categoría"
+
+#~ msgid "Add New Category"
+#~ msgstr "Añadir Nueva Categoría"
+
+#~ msgid "New Category Name"
+#~ msgstr "Nombre de Nueva Categoría"
+
+#~ msgid "Separate categories with commas"
+#~ msgstr "Categorías separadas con comas"
+
+#~ msgid "Add or remove categories"
+#~ msgstr "Añadir o eliminar categorías"
+
+#~ msgid "Choose from the most used categories"
+#~ msgstr "Elija entre las categorías más utilizadas"
+
+#~ msgid "No categories found."
+#~ msgstr "No hay categorías encontradas."
+
+#~ msgid "Categories"
+#~ msgstr "Categorías"
+
+#~ msgid "Limit"
+#~ msgstr "Límite"
+
+#~ msgid "Maximum number of posts."
+#~ msgstr "El número máximo de artículos."
+
+#~ msgid "Descending"
+#~ msgstr "Descendente"
+
+#~ msgid "Ascending"
+#~ msgstr "Ascendente"
+
+#~ msgid "Order"
+#~ msgstr "Orden"
+
+#~ msgid "Posts order"
+#~ msgstr "Orden de artículos "
+
+#~ msgid "None"
+#~ msgstr "Ningún "
+
+#~ msgid "Post ID"
+#~ msgstr "ID del Artículo"
+
+#~ msgid "Post author"
+#~ msgstr "Autor del artículo"
+
+#~ msgid "Post title"
+#~ msgstr "Título del artículo"
+
+#~ msgid "Post slug"
+#~ msgstr "Slug del artículo"
+
+#~ msgid "Last modified date"
+#~ msgstr "Última fecha de modificación"
+
+#~ msgid "Post parent"
+#~ msgstr "Artículo padres"
+
+#~ msgid "Random"
+#~ msgstr "Aleatorio"
+
+#~ msgid "Comments number"
+#~ msgstr "Número de comentarios"
+
+#~ msgid "Menu order"
+#~ msgstr "Orden del Menu"
+
+#~ msgid "Meta key values"
+#~ msgstr "Valores de Meta key "
+
+#~ msgid "Order by"
+#~ msgstr "Ordenar por"
+
+#~ msgid "Order posts by"
+#~ msgstr "Ordenar artículos por"
+
+#~ msgid "Category"
+#~ msgstr "Categoría"
+
+#~ msgid "Select category to show testimonials from"
+#~ msgstr "Seleccione la categoría para mostrar testimonios de"
+
+#~ msgid "Post ID's"
+#~ msgstr "ID del Artículo"
+
+#~ msgid "Enter comma separated ID's of the posts that you want to show"
+#~ msgstr ""
+#~ "Introduzca separados por comas ID's de los artículos que desea mostrar"
+
+#~ msgid "Display author?"
+#~ msgstr "¿Mostrar al Autor?"
+
+#~ msgid "Display avatar?"
+#~ msgstr "¿Mostrar Avatar?"
+
+#~ msgid "Avatar size"
+#~ msgstr "Tamaño del avatar"
+
+#~ msgid "Avatar size (in pixels)"
+#~ msgstr "Tamaño del avatar (en píxeles)"
+
+#~ msgid "Part of content"
+#~ msgstr "Parte del contenido"
+
+#~ msgid "Full content"
+#~ msgstr "Contenido completo"
+
+#~ msgid "Post content"
+#~ msgstr "Contenido del artículo"
+
+#~ msgid "Choose to display a part or full content"
+#~ msgstr "Elija para mostrar una parte o el contenido completo"
+
+#~ msgid "Content Length"
+#~ msgstr "Longitud del contenido"
+
+#~ msgid "Insert the number of words you want to show in the post content."
+#~ msgstr ""
+#~ "Inserte el número de palabras que desea mostrar en el contenido de los "
+#~ "artículos."
+
+#~ msgid "Template"
+#~ msgstr "Plantilla"
+
+#~ msgid "Shortcode template"
+#~ msgstr "Plantilla de Shortcode"
+
+#~ msgid "Class"
+#~ msgstr "Clase"
+
+#~ msgid "Extra CSS class"
+#~ msgstr "Extra clase CSS "
+
+#~ msgid "Author's name"
+#~ msgstr "Nombre del autor"
+
+#~ msgid "Author's avatar"
+#~ msgstr "Avatar del autor"
+
+#~ msgid "Author's email"
+#~ msgstr "Email del autor"
+
+#~ msgid "Author's URL"
+#~ msgstr "URL del autor"
+
+#~ msgid "Content"
+#~ msgstr "Contenido"
+
+#~ msgid "Author's name (Testimonials only)"
+#~ msgstr "Nombre del autor (Testimonios solamente)"
+
+#~ msgid "Author's email (Testimonials only)"
+#~ msgstr "Email del autor (Testimonios solamente)"
+
+#~ msgid "Author's URL (Testimonials only)"
+#~ msgstr "URL de Autor (Testimonios solamente)"
+
+#~ msgid "Cherry Testimonials"
+#~ msgstr "Cherry Testimonios"
+
+#~ msgid "Your site's most recent Testimonials."
+#~ msgstr "Testimonios más recientes de su sitio."
+
+#~ msgid "No Order"
+#~ msgstr "Sin orden"
+
+#~ msgid "Entry ID"
+#~ msgstr "Entrada ID"
+
+#~ msgid "Date Added"
+#~ msgstr "Fecha Agregada"
+
+#~ msgid "Attributes Order"
+#~ msgstr "Atributos de la Orden"
+
+#~ msgid "Random Order"
+#~ msgstr "Orden Aleatorio"
+
+#~ msgid "Author's avatar (Testimonials only)"
+#~ msgstr "Avatar del autor (Testimonios solamente)"

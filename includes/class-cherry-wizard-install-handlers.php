@@ -521,7 +521,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 
 			if ( false == $url ) {
 				$result['type']      = 'error';
-				$result['content']   = __( 'Can not download Plugin Manager', $cherry_wizard->slug );
+				$result['content']   = __( 'Can`t download Plugin Manager', $cherry_wizard->slug );
 				$result['next_step'] = false;
 				$this->send_install_response( $result );
 			}
@@ -597,7 +597,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 
 			if ( false == $url ) {
 				$result['type']      = 'error';
-				$result['content']   = __( 'Can not download Data Manager', $cherry_wizard->slug );
+				$result['content']   = __( 'Can`t download Data Manager', $cherry_wizard->slug );
 				$result['next_step'] = false;
 				$this->send_install_response( $result );
 			}
@@ -834,7 +834,7 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 
 					if ( false == $source ) {
 						$result['type']      = 'error';
-						$result['content']   = __( 'Can not download ', $cherry_wizard->slug ) . $plugin_data['name'];
+						$result['content']   = __( 'Can`t download ', $cherry_wizard->slug ) . $plugin_data['name'];
 						$result['next_step'] = false;
 						$this->send_install_response( $result );
 					}

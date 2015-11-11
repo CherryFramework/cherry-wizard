@@ -82,7 +82,7 @@ if ( !class_exists( 'cherry_wizard_helper' ) ) {
 			if ( is_wp_error( $key_request ) || ! isset($key_request['response']) ) {
 				$this->send_license_response( array(
 					'type'        => 'error',
-					'message'     => __( 'Can not send activation request. ' . $key_request->get_error_message(), $cherry_wizard->slug )
+					'message'     => __( 'can`t send activation request. ' . $key_request->get_error_message(), $cherry_wizard->slug )
 				) );
 			}
 
