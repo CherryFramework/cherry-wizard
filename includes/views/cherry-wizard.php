@@ -42,10 +42,10 @@ $nonce = wp_create_nonce( 'cherry_wizard' );
 				</div>
 				<div class="wizard-form-row_">
 					<div class="wizard-form-col-label_">
-						<label for="cherry-theme-key"><?php _e( 'Activation Key', $cherry_wizard->slug ); ?></label>
+						<label for="cherry-theme-key"><?php _e( 'Order ID', $cherry_wizard->slug ); ?></label>
 					</div>
 					<div class="wizard-form-col-control_">
-						<input type="text" name="theme_key" id="cherry-theme-key" value="" placeholder="<?php _e( 'Enter theme activation key', $cherry_wizard->slug ); ?>">
+						<input type="text" name="theme_key" id="cherry-theme-key" value="" placeholder="<?php _e( 'Enter your Order ID', $cherry_wizard->slug ); ?>">
 					</div>
 				</div>
 				<div class="wizard-form-row_ submit-row_">

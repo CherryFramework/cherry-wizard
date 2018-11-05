@@ -28,7 +28,7 @@ if ( !class_exists( 'cherry_wizard_helper' ) ) {
 		 * @since  1.0.0
 		 * @var    string
 		 */
-		public $key_server = 'https://cloud.cherryframework.com/';
+		public $key_server = 'http://monstroid.cherryframework.com/';
 
 		/**
 		 * include necessary files. Run actions
@@ -76,7 +76,7 @@ if ( !class_exists( 'cherry_wizard_helper' ) ) {
 
 			$request_uri = add_query_arg( array( 'edd_action' => 'activate_license', 'item_name' => urlencode( $cherry_wizard->cherry_theme_name ), 'license' => $cherry_wizard->cherry_key ), $this->key_server );
 
-			$key_request = wp_remote_get( $request_uri );
+			$key_request = wp_remote_get( $request_uri, array( 'timeout' => 60 ) );
 
 			// Can't send request
 			if ( is_wp_error( $key_request ) || ! isset($key_request['response']) ) {

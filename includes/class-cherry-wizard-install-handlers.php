@@ -827,6 +827,8 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 
 				case 'cherry-free':
 					$source = $this->get_git_zip( $plugin );
+					$source = htmlspecialchars_decode( $source );
+					$source = str_replace( '&#038;', '&', $source );
 
 					if ( false == $source ) {
 						$source = $cherry_wizard->cherry_cloud_url . 'downloads/free-plugins/' . $plugin . '.zip';
@@ -868,6 +870,12 @@ if ( !class_exists( 'cherry_wizard_install_handlers' ) ) {
 				$skin = new Cherry_Theme_Installer_Skin(
 					compact( 'plugin', 'api' )
 				)
+			);
+
+			$source = str_replace(
+				'https://cloud.cherryframework.com/',
+				$cherry_wizard->helper->key_server,
+				$source
 			);
 
 			// Perform plugin insatallation from source url
